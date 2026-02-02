@@ -26,7 +26,7 @@
  	
  	calc_anios(numeroDias, anio, mes, dia);
  	
- 	cout << "Usted se encuentra en la fecha " << dia << "/" << mes << "/" << anio + 2000 << endl;
+ 	cout << "Usted se encuentra en la fecha " << dia << "/" << mes << "/" << anio << endl;
  	
  	return 0;
  }
@@ -34,10 +34,10 @@
 void calc_anios(int dias, int &year, int &month, int &day) {
 	// dias = 3456
 	year = dias / 365; // 9
-	dias %= 365; // 171
+	dias %= 365;
 	
-	month = dias / 30; // 5
-	day = dias %= 30; // 21
+	month = dias / 30;
+	day = dias %= 30;
 }
 
 
